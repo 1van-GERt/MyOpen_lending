@@ -4,8 +4,9 @@ html {
 
 body{
 	margin: 0;
-	
-	min-width: 390px;
+	width: 100vw;
+	min-width: 375px;
+	background: #000;
 }
 
 .show_mobile_menu{
@@ -42,7 +43,7 @@ body{
 	display: flex;
 	align-items: center;
     justify-content: center;
-	width: 156px;
+	min-width: 156px;
 	height: 56px;
 	box-sizing: border-box;
 	border: 2px solid #FFC700;
@@ -159,11 +160,13 @@ p{
 
 .text_more_container{
 	width: 100%;
+	padding: 5px;
 	background: rgba(0, 0, 0, 0.767);
+	border: 1px solid #FFC700;
 }
 
 .text_table{
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 20px 0;
 	width: 256px;
 	border-radius: 6px;
