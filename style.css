@@ -1,12 +1,16 @@
 html {
 	scroll-behavior: smooth;
+
+
 }
 
 body{
 	margin: 0;
 	width: 100vw;
 	min-width: 375px;
-	background: #000;
+	padding-right: 15px;	
+	box-sizing: border-box;
+	background: black;
 }
 
 .show_mobile_menu{
@@ -19,7 +23,7 @@ body{
 }
 
 
-/* <___ CUSTOM ___> */
+/*___________________________  BTN  ______________________*/
 
 .btn_container {
   display: flex;
@@ -43,8 +47,8 @@ body{
 	display: flex;
 	align-items: center;
     justify-content: center;
-	min-width: 156px;
-	height: 56px;
+	min-width: 177px;
+	height: 71px;
 	box-sizing: border-box;
 	border: 2px solid #FFC700;
 	border-radius: 6px;
@@ -104,7 +108,9 @@ body{
   }
 
 
-/* <___ #text ___> */
+
+
+/*___________________________  TEXT  ______________________*/
 p{
 	margin:0;
 	color: rgba(255, 255, 255, 0.80);
@@ -118,12 +124,16 @@ p{
 }
 
 .name_section{
-	position: relative;
+	display: flex;
+	justify-content: center;
 	min-width: 260px;
 	min-height: 100px;
 	margin-bottom: 28px;
 	box-sizing: border-box;
-	
+}
+
+.name_first_screen{
+	position: relative;
 }
 
 .name_section>p{
@@ -131,38 +141,37 @@ p{
 	font-family: Vujahday Script;
 	font-size: 48px;
 }
-.name_section>p:first-child{
+
+.name_first_screen>p:first-child{
 	position: absolute;
 	top:0;
 	left: 0;
 	z-index: 103;
 }
 
-.name_section>p:nth-child(2n){
-	color: #FFC700BA;
+.name_first_screen>p:nth-child(2n){
+
 	position: absolute;
 	top:22%;
 	left: 12%;
 	z-index: 102;
 }
 
-.name_section>p:last-child{
+.name_first_screen>p:last-child{
 	position: absolute;
 	bottom: 0;
 	left: 29%;
 	z-index: 101;
 }
 
+.text_gold{
+	color: #FFC700BA !important;
+
+}
+
 .text_main{
 	font-family: Roboto;
 	font-size: 24px;
-}
-
-.text_more_container{
-	width: 100%;
-	padding: 5px;
-	background: rgba(0, 0, 0, 0.767);
-	border: 1px solid #FFC700;
 }
 
 .text_table{
@@ -183,11 +192,62 @@ p{
 }
 
 
+/*___________________________  text_more  ______________________*/
+.text_more_container{
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.767);
+}
+
+.btn_more{
+	position: absolute;
+	bottom: 5px;
+	right:  10px;
+	padding: 0 15px 0 40px;
+	color: rgba(255, 255, 255, 0.60);
+	background: rgb(0, 0, 0);
+	font-family: Roboto;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 50px; /* 208.333% */
+	text-decoration-line: underline;
+	cursor: pointer;
+}
+
+.btn_more:hover{
+	color: #FFC700;
+}
+
+.text_main_modified , .btn_more_modified{
+	display: none;
+}
+
+.show_more > .text_main_standard{
+	display: none;
+}
+
+.show_more > .text_main_modified{
+	display: none;
+}
+
+.show_more > .text_main_modified{
+	display: block;
+}
+
+.show_more > .btn_more_modified{
+	display: block;
+}
 
 
 
 
-/* <___ HEADER ___> */
+
+
+
+
+/*___________________________  HEADER  ______________________*/
 
 .header_container{
 	display: block;
@@ -208,6 +268,7 @@ p{
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1336px;
+	height: 114px;
 	margin: 0 auto;
 	background-color: black;
 
@@ -216,15 +277,17 @@ p{
 .header_logo{
 	background: url(./assets//img/Group\ 24.png)  no-repeat;
 	background-size: cover;
+	margin-left: 30px;
 	width: 65px;
 	height: 65px;	
+	
 }
 
 .header_burger{
 	display: flex;
 	align-items: center;
 	position: fixed;
-	top: 20px;
+	top: 30px;
 	right: 30px;
 	width: 50px;
 	height: 50px;
@@ -256,7 +319,7 @@ p{
 
 }
 
-/* tezt */
+/*___________________________  header_nav  ______________________*/
 .header_nav{
 	display: none;
 	align-items: center;
@@ -323,7 +386,7 @@ p{
 	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* <___ AGENCY ___> */
+/*___________________________  agency  ______________________*/
 
 .agency_container{
 	margin-top: 80px;
@@ -341,63 +404,9 @@ p{
 	padding: 30px;
 }
 
-.arrow_down{
-	display: block;
-	margin: 0 auto;
-	width: 24.941px;
-	height: 50px;
-	background: url(./assets/img/arrow_down.svg) no-repeat; background-position: center;;
-}
 
 
-
-
-/* <___ TOKEN ___> */
-
-.token_container{
-
-}
-
-.token{
-
-	max-width: 1336px;
-	height: 100vh;
-	margin: 0 auto;
-}
-
-
-/* <___ WORK ___> */
-
-.work_container{
-
-	background-color: rgba(255, 0, 255, 0.5);
-}
-
-.work{
-
-	max-width: 1336px;
-	height: 100vh;
-	margin: 0 auto;
-	background-color: rgb(255, 0, 255);
-}
-
-
-/* <___ CONTACTS ___> */
-
-.contacts_container{
-
-	background-color: rgba(0, 255, 255, 0.5);
-}
-
-.contacts{
-
-	max-width: 1336px;
-	height: 100vh;
-	margin: 0 auto;
-	background-color: rgb(0, 255, 255);
-}
-
-/* <___ FOOTER ___> */
+/*___________________________  footer  ______________________*/
 
 .footer_container{
 
