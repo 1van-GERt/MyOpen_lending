@@ -205,7 +205,7 @@ p{
 	bottom: 5px;
 	right:  10px;
 	padding: 0 15px 0 40px;
-	color: rgba(255, 255, 255, 0.60);
+	color: rgba(255, 255, 255, 0.288);
 	background: rgb(0, 0, 0);
 	font-family: Roboto;
 	font-size: 24px;
@@ -386,15 +386,12 @@ p{
 	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
 }
 
-/*___________________________  agency  ______________________*/
 
-.agency_container{
+.section_container{
 	margin-top: 80px;
-
-
 }
 
-.agency{
+.section{
 	display: flex;
 	flex-direction: column;
     justify-content: space-around;
@@ -403,8 +400,59 @@ p{
 	margin: 0 auto;
 	padding: 30px;
 }
+/*___________________________  agency  ______________________*/
 
 
+
+.agency{
+
+}
+
+/*___________________________  offer  ______________________*/
+
+.social_pointer{
+	position: relative;
+	height: 55px;
+}
+
+.social_pointer>div{
+	position: absolute;
+	left: 55%;
+	width: 55px;
+	height: 55px;
+	background: url(./assets/img/social_pointer.png)no-repeat  95%;
+}
+
+.offer_list>li{
+
+		color: white; /* Цвет маркеров */
+}
+
+
+.social_links{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.social_links_item>a{
+	display: block;
+	width: 55px;
+	height: 55px;
+	margin: 0 12px;
+	border-radius: 5px;
+}
+
+.instagram{
+	background: url(./assets/img/logo_instagram.png)no-repeat  95%;
+}
+.telegram{
+	background: url(./assets/img/logo_telegram.png)no-repeat  95%;
+}
+.facebook {
+	background: url(./assets/img/logo_facebook.png)no-repeat  95%;
+}	
+}
 
 /*___________________________  footer  ______________________*/
 

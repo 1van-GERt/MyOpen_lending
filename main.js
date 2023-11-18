@@ -50,16 +50,6 @@ function closeMenu(){
 
 /*___________________________  show_more  ______________________*/
 
-// btn_more.addEventListener('click', event =>{
-// 	console.log('win')
-// 	if( text_more_container.classList.contains('show_more')){
-// 		text_more_container.classList.remove('show_more');
-// 		console.log('2')
-// 	}	else{
-// 		text_more_container.classList.add('show_more');
-// 		console.log('1')
-// 	}
-// });
 
 for (let i = 0; i < btn_more.length; i++) {
 	btn_more[i].addEventListener('click', event =>{
@@ -72,11 +62,3 @@ for (let i = 0; i < btn_more.length; i++) {
 		}
 	});
 }
-
-// function showmore(){
-
-// };
-
-// function closeMore(){
-	
-// };
