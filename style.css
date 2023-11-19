@@ -23,6 +23,7 @@ body{
 }
 
 
+
 /*___________________________  BTN  ______________________*/
 
 .btn_container {
@@ -106,6 +107,12 @@ body{
 	text-shadow: -1px -1px 0 darken(red, 9.5%);
 	transition: all 250ms linear;
   }
+
+  /* .buy_token{
+	width: 177px;
+	height: 71px;
+	background: #FFC700;
+  } */
 
 
 
@@ -343,6 +350,25 @@ p{
 
 }
 
+.mobile_nav{
+	list-style-type: none;
+}
+
+.mobile_nav_item{
+	
+}
+
+.mobile_nav_link {
+	color: rgba(255, 255, 255, 0.80);
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+
 .header_nav_link{
 	margin: 0 5px;
 	padding: 5px 10px;
@@ -380,10 +406,18 @@ p{
 .mobile_nav{
 	z-index: 1201;
 	width: 100vw;
-	height: 150px;
+	height: auto;
+	box-sizing: border-box;
 	margin: 0;
+	padding: 30px;
 	background: rgb(109, 109, 109);
 	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+	border-bottom: 2px white solid;
+}
+
+.mobile_nav_link{
+	display: block;
+	height: 40px;
 }
 
 
@@ -452,6 +486,163 @@ p{
 .facebook {
 	background: url(./assets/img/logo_facebook.png)no-repeat  95%;
 }	
+
+
+/*___________________________  token  ______________________*/
+
+.arr_next_conteiner{
+	width: 96px;
+	height: 48px;
+	position: relative;
+	display: flex;
+}
+
+.arr_next_conteiner>div{
+	width: 48px;
+	height: 48px;
+	background: url(./assets/img/arr_next.png)no-repeat ;
+	background-size: cover;
+}
+
+.arr_next_conteiner_left>div:first-child{
+	position: absolute;
+	left: -11%;
+}
+
+.arr_next_conteiner_left>div:last-child{
+	position: absolute;
+	left: 17%;
+}
+
+.token_ul{
+	padding: 0;
+}
+
+.token_ul_item{
+	margin: 30px 0;	
+}
+
+.token_ul_item>div{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.token_ul_item>div:first-child{
+	border-bottom: 4px solid #FFC700;
+}
+
+.token_ul_item>div:first-child>p{
+	color: #FFC700;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.token_ul_item>div:last-child>p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+
+
+
+
+/*___________________________  slider  ______________________*/
+
+
+.slider_item{
+
+}
+
+.slider_item_photo:nth-child(1n){
+	width: inherit;
+	height: 400px;
+	background: url(./assets/img/photo_1.png)no-repeat ;
+	background-size: contain;
+}
+
+
+
+*,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .itc-slider__items {
+      counter-reset: slide;
+    }
+
+    .itc-slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      height: 250px;
+      position: relative;
+    }
+
+    .itc-slider__item::before {
+      content: counter(slide) "/5";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .itc-slider__item:nth-child(1) {
+      background-color: #f44336;
+    }
+
+    .itc-slider__item:nth-child(2) {
+      background-color: #9c27b0;
+    }
+
+    .itc-slider__item:nth-child(3) {
+      background-color: #3f51b5;
+    }
+
+    .itc-slider__item:nth-child(4) {
+      background-color: #03a9f4;
+    }
+
+    .itc-slider__item:nth-child(5) {
+      background-color: #4caf50;
+    }
+
+
+/*___________________________  footer  ______________________*/
+
+.job_smile{
+	position: relative;
+}
+
+.job_smile>div{
+	position: absolute;
+	top: -22%;
+	right: 12%;
+	transform: rotate(5deg);
+	width: 80px;
+	height: 60px;
+	background: url(./assets/img/smile.png)no-repeat ;
+	background-size: contain;
 }
 
 /*___________________________  footer  ______________________*/
@@ -465,6 +656,7 @@ p{
 
 	max-width: 1336px;
 	margin: 0 auto;
+
 	background-color: rgb(255, 255, 0);
 }
 

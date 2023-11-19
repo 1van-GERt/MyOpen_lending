@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
 		<link href="https://fonts.cdnfonts.com/css/vujahday-script" rel="stylesheet">
+		<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+		<script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
 	</head>
 	<body>
 		<div class="mobile_nav_container" id="mobile_nav_container">
@@ -18,19 +20,19 @@
 					<a href="#aboutUs" class="mobile_nav_link">About Us</a>
 				</li>
 				<li class="mobile_nav_item">
-					<a href="#token" class="mobile_nav_link">Token</a>
+					<a href="#offer" class="mobile_nav_link">Offer</a>
 				</li>
 				<li class="mobile_nav_item">
 					<a href="#app" class="mobile_nav_link">App</a>
 				</li>
 				<li class="mobile_nav_item">
+					<a href="#token" class="mobile_nav_link">Token</a>
+				</li>
+				<li class="mobile_nav_item">
 					<a href="#team" class="mobile_nav_link">Team</a>
 				</li>
 				<li class="mobile_nav_item">
-					<a href="#work" class="mobile_nav_link">Work</a>
-				</li>
-				<li class="mobile_nav_item">
-					<a href="#contacts" class="mobile_nav_link">Contacts</a>
+					<a href="#jobs" class="mobile_nav_link">Jobs</a>
 				</li>
 			</ul>
 		</div>
@@ -43,105 +45,105 @@
 						<a href="#agency" class="header_nav_link ">Agency</a>
 					</li>
 					<li class="header_nav_item">
-						<a href="#offer" class="header_nav_link">Offer</a>
+						<a href="#aboutUs" class="header_nav_link">About Us</a>
 					</li>
 					<li class="header_nav_item">
-						<a href="#token" class="header_nav_link">Token</a>
+						<a href="#offer" class="header_nav_link">Offer</a>
 					</li>
 					<li class="header_nav_item">
 						<a href="#app" class="header_nav_link">App</a>
 					</li>
 					<li class="header_nav_item">
+						<a href="#token" class="header_nav_link">Token</a>
+					</li>
+					<li class="header_nav_item">
 						<a href="#team" class="header_nav_link">Team</a>
 					</li>
 					<li class="header_nav_item">
-						<a href="#work" class="header_nav_link">Work</a>
-					</li>
-					<li class="header_nav_item">
-						<a href="#contacts" class="header_nav_link">Contacts</a>
+						<a href="#jobs" class="header_nav_link">Jobs</a>
 					</li>
 				</ul>
 				<label class="header_burger" id="header_burger"><span></span></label>
 			</div>
 		</div>
 
-		<div >
-			<div class="section_container" style="background: url(./assets/img/bg_main.png) no-repeat  ;background-position: center;">
-				<div class="section"  id="agency">
-					<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;">
 
-						<div class="name_section name_first_screen">
-							<p>MY</p>
-							<p class="text_gold">OPEN</p>
-							<p>AGENCY</p>
+		<div class="section_container" style="background: url(./assets/img/bg_main.png) no-repeat  ;background-position: center;">
+			<div class="section"  id="agency">
+				<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;">
+
+					<div class="name_section name_first_screen">
+						<p>MY</p>
+						<p class="text_gold">OPEN</p>
+						<p>AGENCY</p>
+					</div>
+					<div >
+						<p style="text-align: center; line-height: 27px"> The best marketing tool<br> for your business</p>
+					</div>
+				</div>
+
+				<div>
+					<p style="text-align: left;  font-size: 36px; line-height: 50px; margin-bottom: 47px;">TIME <br>IS OPEN <br>YOUR EYSES</p>
+					<div style="display: flex; justify-content: center; " >
+						<div class="btn_container" style="display: none;">
+							<a href="#" class="btn" >More information</a>
 						</div>
-						<div >
-							<p style="text-align: center; line-height: 27px"> The best marketing tool<br> for your business</p>
+						<div class="btn_container" style="margin-bottom: 57px;">
+							<a href="#" class="btn">Contact us</a>
 						</div>
 					</div>
+				</div>
 
-					<div>
-						<p style="text-align: left;  font-size: 36px; line-height: 50px; margin-bottom: 47px;">TIME <br>IS OPEN <br>YOUR EYSES</p>
-						<div style="display: flex; justify-content: center; " >
-							<div class="btn_container" style="display: none;">
-								<a href="#" class="btn" >More information</a>
-							</div>
-							<div class="btn_container" style="margin-bottom: 57px;">
-								<a href="#" class="btn">Contact us</a>
-							</div>
-						</div>
+				<div>
+					<p style="line-height: normal; 	    text-align: center;">
+						Scroll below to learn<br> more about us :)
+					</p>
+				</div>
+		
+			</div>
+		</div>
+
+		<div id="aboutUs" class="section_container">
+			<div class="section">
+				
+				<div class="name_section">
+					<p>About</p>
+					&zwj
+					<p class="text_gold">Us</p>
+				</div>	
+				
+				<div>
+					<div id="text_more_container" class="text_more_container ">
+						<p class="text_main text_main_standard">MyOpen Agency works on the same platform with clients and executors, which simplifies communi....</p>
+						<p class="text_main text_main_modified">MyOpen Agency works on the same platform with clients and executors, which simplifies communiication between both parties, and takes full responsibility at all stages of the transaction;
+							New introduced technologies help to avoid problems such as:<br>
+							<br>
+							Deadlines for order completion, <br>
+							Finding a qualified employee for your project, <br>
+							Payment labor.
+						</p>
+
+						<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
+						<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
 					</div>
 
-					<div>
-						<p style="line-height: normal; 	    text-align: center;">
-							Scroll below to learn<br> more about us :)
+					<div class="text_table">
+						<p>
+							The main advantage of our company is the integrated MyOpen token for paying the labor of our performers, our capabilities allow us to pay for the service twice as high as the market
 						</p>
 					</div>
-			
-				</div>
-			</div>
-
-			<div id="aboutUs" class="section_container">
-				<div class="section">
-					
-					<div class="name_section">
-						<p>About</p>
-						&zwj
-						<p class="text_gold">Us</p>
-					</div>	
-					
-					<div>
-						<div id="text_more_container" class="text_more_container ">
-							<p class="text_main text_main_standard">MyOpen Agency works on the same platform with clients and executors, which simplifies communi....</p>
-							<p class="text_main text_main_modified">MyOpen Agency works on the same platform with clients and executors, which simplifies communiication between both parties, and takes full responsibility at all stages of the transaction;
-								New introduced technologies help to avoid problems such as:<br>
-								<br>
-								Deadlines for order completion, <br>
-								Finding a qualified employee for your project, <br>
-								Payment labor.
-							</p>
-
-							<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
-							<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
-						</div>
-
-						<div class="text_table">
-							<p>
-								The main advantage of our company is the integrated MyOpen token for paying the labor of our performers, our capabilities allow us to pay for the service twice as high as the market
-							</p>
-						</div>
-						<div class="text_table">
-							<p>
-								Price, without losses to the company, without commissions and hidden payments, which in turn increases the rating and trust of the company						
-							</p>
-						</div>
-						<div class="btn_container">
-							<a href="#" class="btn">More information</a>
-						</div>
+					<div class="text_table">
+						<p>
+							Price, without losses to the company, without commissions and hidden payments, which in turn increases the rating and trust of the company						
+						</p>
+					</div>
+					<div class="btn_container">
+						<a href="#" class="btn">More information</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
 
 		<div id="offer" class="section_container">
 			<div class="section">
@@ -182,7 +184,7 @@
 			</div>
 		</div>
 
-		<div id="offer" class="section_container">
+		<div id="app" class="section_container">
 			<div class="section">
 				
 				<div class="name_section">
@@ -205,7 +207,7 @@
 				</div>
 		</div>
 
-		<div id="offer" class="section_container">
+		<div id="token" class="section_container">
 			<div class="section">
 				
 				<div class="name_section">
@@ -223,10 +225,10 @@
 					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
 					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
 				</div>
-				<div class="btn_container">
-					<a href="#" class="btn" >Bye token</a>
+				<div class="btn_container buy_token">
+					<a href="#" class="btn" >Buy token</a>
 				</div>
-				<div class="btn_container">
+				<div class="btn_container" style="padding: 26px 0 40px;">
 					<a href="#" class="btn" >View token</a>
 				</div>
 				<div>
@@ -235,6 +237,162 @@
 				<div style="display: flex; justify-content: center;">
 					<div style="width: 310px; height: 350px; background: url(./assets/img/demo.png)no-repeat  95%;">
 					</div>
+				</div>
+
+				<div class="arr_next_conteiner arr_next_conteiner_left">
+					<div></div>
+					<div></div>
+				</div>
+
+				<div>
+					<p class="text_main">We combine a marketing agency and a freelancing exchange....</p>
+				</div>
+
+				<div class="arr_next_conteiner arr_next_conteiner_right">
+					<div></div>
+					<div></div>
+				</div>
+
+				<ul class="token_ul">
+					<li class="token_ul_item">
+						<div>
+							<p>Leave</p>
+							<p>Clarify</p>
+						</div>
+						<div>
+							<p>Application</p>
+							<p>Details</p>
+						</div>
+					</li>
+					<li class="token_ul_item">
+						<div>
+							<p>Control</p>
+							<p>1000+</p>
+						</div>
+						<div>
+							<p>Fulfillment of orders</p>
+							<p>Performers</p>
+						</div>
+					</li>
+					<li class="token_ul_item">
+						<div>
+							<p>Selecting</p>
+							<p>Fulfill</p>
+						</div>
+						<div>
+							<p>Performer</p>
+							<p>Order</p>
+						</div>
+					</li>
+					<li class="token_ul_item">
+						<div>
+							<p>Legal</p>
+							<p>Program</p>
+						</div>
+						<div>
+							<p>Guarantees</p>
+							<p>Loyalty</p>
+						</div>
+					</li>
+					<li class="token_ul_item">
+						<div>
+							<p>Perform</p>
+							<p>Get</p>
+						</div>
+						<div>
+							<p>Exercise</p>
+							<p>MyOpen token</p>
+						</div>
+					</li>
+					<li class="token_ul_item">
+						<div>
+							<p>Withdraw</p>
+							<p>Exchange</p>
+						</div>
+						<div>
+							<p>To your wallet without 
+								commissions</p>
+							<p>At the best rate</p>
+						</div>
+					</li>
+				</ul>
+				<div class="text_table">
+					<p>Token issued in the TON ecosystem, the highest transaction speed and lowest fees, integration with telegram, and its own tonkeeper wallet, support for telegram management, makes the project more interesting for the user</p>
+				</div>
+				<div class="btn_container" style="padding: 26px 0 40px;">
+					<a href="#" class="btn" >View token</a>
+				</div>
+				<div class="btn_container" style="padding: 26px 0 40px;">
+					<a href="#" class="btn" >Bue token</a>
+				</div>
+		</div>
+
+		<div id="team" class="section_container">
+			<div class="section">
+				
+				<div class="name_section">
+					<p>Our</p>
+					&zwj
+					<p class="text_gold">Team</p>
+				</div>	
+
+				<div class="slider_item">
+					<div class="slider_item_photo"></div>
+					<div class="slider_item_title">
+						<p>Ivan Ivanov</p>
+						<p>Пес Обыкновенный</p>
+					</div>
+				</div>
+				<!-- <div class="container">
+
+					<div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+					  <div class="itc-slider__wrapper">
+						<div class="itc-slider__items">
+						  <div class="itc-slider__item">
+						  </div>
+						  <div class="itc-slider__item">
+						  </div>
+						  <div class="itc-slider__item">
+						  </div>
+						  <div class="itc-slider__item">
+						  </div>
+						  <div class="itc-slider__item">
+						  </div>
+						</div>
+					  </div>
+					  <button class="itc-slider__btn itc-slider__btn_prev"></button>
+					  <button class="itc-slider__btn itc-slider__btn_next"></button>
+					</div>
+				  
+				  </div> -->
+
+
+		</div>
+
+		<div id="jobs" class="section_container">
+			<div class="section">
+				
+				<div class="name_section">
+					<p>Jobs</p>
+					&zwj
+					<p>for</p>
+					&zwj
+					<p class="text_gold">You</p>
+				</div>	
+				<div class="job_smile">
+					<p class="text_main">
+						DESIGNER<br>
+						PROJECT MANAGER<br>
+						DEVELOPER<br>
+						MANAGER<br>
+					</p>
+					<div></div>
+				</div>
+				<div class="btn_container" style="padding: 26px 0 40px;">
+					<a href="#" class="btn" >Contact us</a>
+				</div>
+				<div class="btn_container" style="padding: 26px 0 40px;">
+					<a href="#" class="btn" >Submit a form</a>
 				</div>
 
 		</div>
