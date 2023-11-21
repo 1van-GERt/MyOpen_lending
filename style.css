@@ -552,7 +552,7 @@ p{
 .slider_item_photo:nth-child(1n){
 	width: inherit;
 	height: 215px;
-	background: url(./assets/img/photo_1.png)no-repeat ;
+	/* background: url(./assets/img/photo_1.png)no-repeat ; */
 	background-size: contain;
 }
 
