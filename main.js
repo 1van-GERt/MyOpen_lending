@@ -5,10 +5,15 @@ const mobile_nav_container = document.getElementById('mobile_nav_container');
 const mobile_nav = document.getElementById('mobile_nav');
 const mobile_nav_link = document.getElementsByClassName('mobile_nav_link');
 
-const text_more_container = document.getElementById('text_more_container');
-const btn_more = document.getElementsByClassName('btn_more');
-console.log(btn_more)
+const text_more_container_1 = document.getElementById('text_more_container_1');
+const btn_more_1 = document.getElementsByClassName('btn_more_1');
 
+const text_more_container_2 = document.getElementById('text_more_container_2');
+const btn_more_2 = document.getElementsByClassName('btn_more_2');
+
+const text_more_container_3 = document.getElementById('text_more_container_3');
+const btn_more_3 = document.getElementsByClassName('btn_more_3');
+console.log(text_more_container_1)
 /*___________________________  show_mobile_menu  ______________________*/
 
 header_burger.addEventListener('click', event =>{
@@ -51,13 +56,36 @@ function closeMenu(){
 /*___________________________  show_more  ______________________*/
 
 
-for (let i = 0; i < btn_more.length; i++) {
-	btn_more[i].addEventListener('click', event =>{
-		if( text_more_container.classList.contains('show_more')){
-			text_more_container.classList.remove('show_more');
+for (let i = 0; i < btn_more_1.length; i++) {
+	btn_more_1[i].addEventListener('click', event =>{
+		if( text_more_container_1.classList.contains('show_more')){
+			text_more_container_1.classList.remove('show_more');
 			console.log('2')
 		}	else{
-			text_more_container.classList.add('show_more');
+			text_more_container_1.classList.add('show_more');
+			console.log('1')
+		}
+	});
+}
+	for (let i = 0; i < btn_more_2.length; i++) {
+		btn_more_2[i].addEventListener('click', event =>{
+			if( text_more_container_2.classList.contains('show_more')){
+				text_more_container_2.classList.remove('show_more');
+				console.log('2')
+			}	else{
+				text_more_container_2.classList.add('show_more');
+				console.log('1')
+			}
+		});
+}
+
+for (let i = 0; i < btn_more_3.length; i++) {
+	btn_more_3[i].addEventListener('click', event =>{
+		if( text_more_container_3.classList.contains('show_more')){
+			text_more_container_3.classList.remove('show_more');
+			console.log('2')
+		}	else{
+			text_more_container_3.classList.add('show_more');
 			console.log('1')
 		}
 	});

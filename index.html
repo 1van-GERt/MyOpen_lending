@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
 		<link href="https://fonts.cdnfonts.com/css/vujahday-script" rel="stylesheet">
-		<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
-		<script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+		<link href="https://itchief.ru/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+		<script src="https://itchief.ru/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
 	</head>
 	<body>
 		<div class="mobile_nav_container" id="mobile_nav_container">
@@ -113,7 +113,7 @@
 				</div>	
 				
 				<div>
-					<div id="text_more_container" class="text_more_container ">
+					<div id="text_more_container_1" class="text_more_container text_more_container_1">
 						<p class="text_main text_main_standard">MyOpen Agency works on the same platform with clients and executors, which simplifies communi....</p>
 						<p class="text_main text_main_modified">MyOpen Agency works on the same platform with clients and executors, which simplifies communiication between both parties, and takes full responsibility at all stages of the transaction;
 							New introduced technologies help to avoid problems such as:<br>
@@ -123,8 +123,8 @@
 							Payment labor.
 						</p>
 
-						<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
-						<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
+						<a id="btn_more_1" class="btn_more btn_more_1 btn_more_standard">more</a>					
+						<a id="btn_more_1" class="btn_more btn_more_1 btn_more_modified">close</a>
 					</div>
 
 					<div class="text_table">
@@ -194,13 +194,13 @@
 					&zwj
 					<p >App</p>
 				</div>	
-				<div id="text_more_container" class="text_more_container ">
+				<div id="text_more_container_2" class="text_more_container text_more_container_2 ">
 					<p class="text_main text_main_standard">Our WEB application brings together customers and contractors from all over the world on one....</p>
 					<p class="text_main text_main_modified">Our WEB application brings together customers and contractors from all over the world on one platform, simplifying communication between both parties, and takes full responsibility at all stages of the transaction.
 					</p>
 
-					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
-					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
+					<a id="btn_more_2"  class="btn_more btn_more_2 btn_more_standard">more</a>					
+					<a id="btn_more_2"  class="btn_more btn_more_2 btn_more_modified">close</a>
 				</div>
 				<div class="btn_container">
 					<a href="#" class="btn" >More information</a>
@@ -217,13 +217,13 @@
 					&zwj
 					<p class="text_gold">Token</p>
 				</div>	
-				<div id="text_more_container" class="text_more_container ">
+				<div id="text_more_container_3" class="text_more_container text_more_container_3">
 					<p class="text_main text_main_standard">MyOpen Agency token was issued in the TON ecosystem andintegrated into our WEB-applic....</p>
 					<p class="text_main text_main_modified">MyOpen Agency token was issued in the TON ecosystem andintegrated into our WEB-applic....MyOpen Agency token was issued in the TON ecosystem andintegrated into our WEB-applic....MyOpen Agency token was issued in the TON ecosystem andintegrated into our WEB-applic....
 					</p>
 
-					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_standard">more</a>					
-					<a id="btn_more" href="#aboutUs" class="btn_more btn_more_modified">close</a>
+					<a id="btn_more_3"  class="btn_more btn_more_3 btn_more_standard">more</a>					
+					<a id="btn_more_3"  class="btn_more btn_more_3 btn_more_modified">close</a>
 				</div>
 				<div class="btn_container buy_token">
 					<a href="#" class="btn" >Buy token</a>
@@ -231,15 +231,16 @@
 				<div class="btn_container" style="padding: 26px 0 40px;">
 					<a href="#" class="btn" >View token</a>
 				</div>
-				<div>
+
+				<!-- <div>
 					<p class="text_main" style="font-size: 24px;">Examples of how our token works</p>
 				</div>
 				<div style="display: flex; justify-content: center;">
 					<div style="width: 310px; height: 350px; background: url(./assets/img/demo.png)no-repeat  95%;">
 					</div>
-				</div>
+				</div> -->
 
-				<div class="arr_next_conteiner arr_next_conteiner_left">
+				<div class="arr_next_conteiner">
 					<div></div>
 					<div></div>
 				</div>
@@ -247,11 +248,13 @@
 				<div>
 					<p class="text_main">We combine a marketing agency and a freelancing exchange....</p>
 				</div>
-
-				<div class="arr_next_conteiner arr_next_conteiner_right">
-					<div></div>
-					<div></div>
+				<div style="display: flex; justify-content: flex-end;">
+					<div class="arr_next_conteiner" style="transform: rotate(180deg);">
+						<div></div>
+						<div></div>
+					</div>
 				</div>
+
 
 				<ul class="token_ul">
 					<li class="token_ul_item">
@@ -336,19 +339,26 @@
 					<p class="text_gold">Team</p>
 				</div>	
 
-				<div class="slider_item">
+				<!-- <div class="slider_item">
 					<div class="slider_item_photo"></div>
 					<div class="slider_item_title">
 						<p>Ivan Ivanov</p>
 						<p>Пес Обыкновенный</p>
 					</div>
-				</div>
-				<!-- <div class="container">
+				</div> -->
+				<div class="container">
 
 					<div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
 					  <div class="itc-slider__wrapper">
 						<div class="itc-slider__items">
 						  <div class="itc-slider__item">
+							<div class="slider_item">
+								<div class="slider_item_photo"></div>
+								<div class="slider_item_title">
+									<p>Ivan Ivanov</p>
+									<p>Пес Обыкновенный</p>
+								</div>
+							</div>
 						  </div>
 						  <div class="itc-slider__item">
 						  </div>
@@ -364,9 +374,9 @@
 					  <button class="itc-slider__btn itc-slider__btn_next"></button>
 					</div>
 				  
-				  </div> -->
+				</div>
 
-
+			</div>
 		</div>
 
 		<div id="jobs" class="section_container">
