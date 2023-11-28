@@ -1,4 +1,4 @@
-document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 
 const body = document.body;
 const header_burger = document.getElementById('header_burger');
