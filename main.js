@@ -15,7 +15,11 @@ const btn_more_2 = document.getElementsByClassName('btn_more_2');
 
 const text_more_container_3 = document.getElementById('text_more_container_3');
 const btn_more_3 = document.getElementsByClassName('btn_more_3');
-console.log(text_more_container_1)
+
+const text_more_container_4 = document.getElementById('text_more_container_4');
+const btn_more_4 = document.getElementsByClassName('btn_more_4');
+
+
 /*___________________________  show_mobile_menu  ______________________*/
 
 header_burger.addEventListener('click', event =>{
@@ -62,10 +66,8 @@ for (let i = 0; i < btn_more_1.length; i++) {
 	btn_more_1[i].addEventListener('click', event =>{
 		if( text_more_container_1.classList.contains('show_more')){
 			text_more_container_1.classList.remove('show_more');
-			console.log('2')
 		}	else{
 			text_more_container_1.classList.add('show_more');
-			console.log('1')
 		}
 	});
 }
@@ -73,10 +75,8 @@ for (let i = 0; i < btn_more_1.length; i++) {
 		btn_more_2[i].addEventListener('click', event =>{
 			if( text_more_container_2.classList.contains('show_more')){
 				text_more_container_2.classList.remove('show_more');
-				console.log('2')
 			}	else{
 				text_more_container_2.classList.add('show_more');
-				console.log('1')
 			}
 		});
 }
@@ -85,10 +85,18 @@ for (let i = 0; i < btn_more_3.length; i++) {
 	btn_more_3[i].addEventListener('click', event =>{
 		if( text_more_container_3.classList.contains('show_more')){
 			text_more_container_3.classList.remove('show_more');
-			console.log('2')
 		}	else{
 			text_more_container_3.classList.add('show_more');
-			console.log('1')
+		}
+	});
+}
+
+for (let i = 0; i < btn_more_4.length; i++) {
+	btn_more_4[i].addEventListener('click', event =>{
+		if( text_more_container_4.classList.contains('show_more')){
+			text_more_container_4.classList.remove('show_more');
+		}	else{
+			text_more_container_4.classList.add('show_more');
 		}
 	});
 }
