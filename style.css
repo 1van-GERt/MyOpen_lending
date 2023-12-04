@@ -960,3 +960,11 @@ p{
 	background-color: rgb(255, 255, 0);
 }
 
+.ticker_container{
+	background-color: rgb(255, 255, 0);
+	width: 130vw;
+    transform: rotate(347deg);
+    position: absolute;
+    left: -20%;
+}
+
