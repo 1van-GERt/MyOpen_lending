@@ -62,6 +62,10 @@ p{
 	line-height: 2.7rem
 }
 
+a{
+	color:gold
+}
+
 .space{
 	width: 1rem;
 }
@@ -961,10 +965,40 @@ p{
 }
 
 .ticker_container{
-	background-color: rgb(255, 255, 0);
+	position: relative;
+	padding-top: 46rem ;
+	overflow:hidden
+}
+
+.ticker_container>marquee{
+	border: 1px solid black;
 	width: 130vw;
-    transform: rotate(347deg);
+	transform: rotate(354deg);
     position: absolute;
     left: -20%;
+	top: 45%;
+	transition: all 350ms;
+
 }
+
+.ticker_container>marquee>a{
+	background-color: rgb(255, 255, 0);
+	text-decoration: none;
+	color: black; 
+	font-family: Vujahday Script;
+	font-weight: 900; 
+	font-size: 5rem;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+.ticker_container>marquee:hover{
+	box-shadow: 1px 1px 25px 10px gold;
+	border: 1px solid white;
+	transition: all 350ms;
+
+}
+
+
 
