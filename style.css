@@ -485,9 +485,11 @@ a{
 }
 
 .header_nav_link{
+	text-align: center;
 	margin: 0 .5rem;
+	min-width: 8rem;
 	padding: .5rem 1rem;
-	border-radius: 10rem;
+	border-radius: 10px;
 	color: rgba(255, 255, 255, 0.80);
 	font-family: Roboto;
 	font-size: 2rem;
@@ -500,7 +502,7 @@ a{
 
 .header_nav_link:hover{
 	background-color:rgba(61, 50, 8, 0.73);
-	box-shadow: 10px 10px 25px 10px rgba(255, 199, 0, 0.73);
+	box-shadow: 0 0 20px 6px gold;
 	transition: all 650ms;
 }
 
@@ -971,6 +973,7 @@ a{
 }
 
 .ticker_container>marquee{
+	background-color: rgb(255, 255, 0);
 	border: 1px solid black;
 	width: 130vw;
 	transform: rotate(354deg);
