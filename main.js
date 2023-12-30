@@ -1,5 +1,3 @@
-
-
 const body = document.body;
 const header_burger = document.getElementById('header_burger');
 const btn_closeMenu = document.getElementById('btn_closeMenu');
@@ -19,6 +17,9 @@ const btn_more_3 = document.getElementsByClassName('btn_more_3');
 const text_more_container_4 = document.getElementById('text_more_container_4');
 const btn_more_4 = document.getElementsByClassName('btn_more_4');
 
+const token_modal_btn = document.getElementById('token_modal_btn');
+const token_modal = document.getElementsByClassName('token_modal');
+console.log(token_modal_btn)
 
 /*___________________________  show_mobile_menu  ______________________*/
 
@@ -100,3 +101,37 @@ for (let i = 0; i < btn_more_4.length; i++) {
 		}
 	});
 }
+
+/*___________________________  show_modal  ______________________*/
+
+token_modal_btn.addEventListener('click', event =>{
+
+	if( body.classList.contains('show_modal')){
+		closeModal();
+	}	else{
+		showModal();
+	}
+});
+
+token_modal.addEventListener('click', event =>{
+
+	event.stopPropagation()
+});
+
+mobile_nav_container.addEventListener('click', event =>{
+
+	if( body.classList.contains('show_modal')){
+		closeModal();
+	}	else{
+		showModal();
+	}
+});
+
+
+function showModal(){
+	body.classList.add('show_modal');
+};
+
+function closeModal(){
+	body.classList.remove('show_modal');
+};
