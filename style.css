@@ -576,7 +576,7 @@ a{
 	flex-direction: column;
     justify-content: space-around;
 	max-width: 50rem;
-	min-height: calc(100vh - 8rem);
+	min-height: 100vh;
 	margin: 0 auto;
 	padding: 3rem;
 	padding-top: 12rem;
@@ -598,6 +598,16 @@ a{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+}
+
+.agency_text{
+	text-align: left;  font-size: 36px; line-height: 50px; margin-bottom: 47px;
+}
+
+@media (max-width: 720px) {
+	.agency_text{
+		font-size: 26px; line-height: 50px;
 	}
 }
 
@@ -669,11 +679,9 @@ a{
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
+	margin-bottom: 0;
 }
 
-.social_links_item{
-
-}
 
 .social_links_item>a{
 	display: flex; 
@@ -728,6 +736,9 @@ a{
 
 
 /*___________________________  token  ______________________*/
+.token_btn_container{
+	margin-top: 30px;
+}
 
 @media (min-width: 720px) {
 	.token_btn_container{
@@ -736,13 +747,6 @@ a{
     	align-items: center;
 	}
 	
-}
-
-.token_pointer{
-	width: 11rem;
-	height: 10rem;
-	background: url(./assets/img/token_pointer.png)no-repeat ;
-	background-size: 100%;
 }
 
 .arr_next_conteiner{
