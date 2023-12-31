@@ -104,34 +104,90 @@ for (let i = 0; i < btn_more_4.length; i++) {
 
 /*___________________________  show_modal  ______________________*/
 
-token_modal_btn.addEventListener('click', event =>{
+// token_modal_btn.addEventListener('click', event =>{
 
-	if( body.classList.contains('show_modal')){
-		closeModal();
-	}	else{
-		showModal();
-	}
-});
+// 	if( body.classList.contains('show_modal')){
+// 		closeModal();
+// 	}	else{
+// 		showModal();
+// 	}
+// });
 
-token_modal.addEventListener('click', event =>{
+// token_modal.addEventListener('click', event =>{
 
-	event.stopPropagation()
-});
+// 	event.stopPropagation()
+// });
 
-mobile_nav_container.addEventListener('click', event =>{
+// mobile_nav_container.addEventListener('click', event =>{
 
-	if( body.classList.contains('show_modal')){
-		closeModal();
-	}	else{
-		showModal();
-	}
-});
+// 	if( body.classList.contains('show_modal')){
+// 		closeModal();
+// 	}	else{
+// 		showModal();
+// 	}
+// });
 
 
-function showModal(){
-	body.classList.add('show_modal');
-};
+// function showModal(){
+// 	body.classList.add('show_modal');
+// };
 
-function closeModal(){
-	body.classList.remove('show_modal');
-};
+// function closeModal(){
+// 	body.classList.remove('show_modal');
+// };
+
+
+// var countDownDate = new Date("dec 31, 2023 23:59:59").getTime();
+var countDownDate = new Date("dec 31, 2023 17:39:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime()
+  console.log(now)
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("watch").innerHTML = days + " : " + hours + " : "  + minutes + " : " + seconds;
+  if (distance < 0) {
+    clearInterval(x);
+	
+window.scroll(0, 0);
+
+document.getElementById("Coming").style.cssText += `
+	opacity: 0;
+	transition: all 1000ms;
+  `;
+  document.getElementById("watch").style.cssText += `
+	color: gold
+  `;
+
+  document.getElementById("watch").innerHTML = "Happy New Year"
+
+  document.getElementById("tagline").className ="test2"
+
+  
+  console.log(document.getElementById("tagline").children)
+  
+
+  setTimeout(
+	() => {		
+		document.getElementById("countdown_container").style.cssText += `
+		opacity: 0;
+		transition: all 1000ms;
+	  `;
+	},
+	5000
+  );
+  setTimeout(
+	() => {		
+		document.getElementById("countdown_container").style.cssText += `
+display: none
+	  `;
+	},
+	6000
+  );
+
+  }
+}, 1000);
+
+console.log(new Date().getUTCHours() )

@@ -95,7 +95,7 @@ a{
 .btn__main_container {
 	display: flex;
     align-items: center;
-
+	justify-content: center;
 }
 
 @media (max-width: 720px) {
@@ -267,11 +267,6 @@ a{
 	position: relative;
 }
 
-/* .name_section>p{
-	color: rgba(255, 255, 255, 0.90);
-	font-family: Vujahday Script;
-	font-size: 4.8rem;
-} */
 
 .name_first_screen>h1:first-child{
 	position: absolute;
@@ -319,7 +314,7 @@ a{
 
 .text_table{
 	margin: 2rem auto;
-	padding: 2rem 0;
+	padding: 2rem 1rem;
 	width: 25.6rem;
 	border-radius: .6rem;
 	border-top: .1rem solid #FFC700;
@@ -327,6 +322,7 @@ a{
 }
 
 .text_table>p{
+	
 	text-align: center;
 	font-family: Roboto;
 	font-size: 1.5rem;
@@ -431,7 +427,7 @@ a{
 	display: flex;
 	align-items: center;
 	position: fixed;
-	top: 3rem;
+	top: 2rem;
 	right: 3rem;
 	width: 5rem;
 	height: 5rem;
@@ -656,19 +652,6 @@ a{
 	background-size: 100%;
 }
 
-.social_pointer{
-	position: relative;
-	height: 5.5rem;
-}
-
-.social_pointer>div{
-	position: absolute;
-	left: 55%;
-	width: 5.5rem;
-	height: 5.5rem;
-	background: url(./assets/img/social_pointer.png)no-repeat  95%;
-}
-
 .offer_list>li{
 
 		color: white; /* Цвет маркеров */
@@ -830,17 +813,6 @@ a{
 .token_text_table{
 	width: 100%;
 }
-
-/* @media (min-width: 720px) {
-	.token_text_table>p{
-		font-size: 36px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 44px;
-	}
-} */
-
-
 
 
 
@@ -1059,4 +1031,154 @@ a{
 .show_modal{
 	position: fixed;
 	overflow: hidden;
+}
+
+
+
+/* final */
+.countdown_container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2000;
+	background: url(./assets/img/bg_main.webp) no-repeat black; 
+	background-size: cover;
+	background-position: 50% 50%; 
+	background-attachment: fixed;
+	box-shadow: inset 0px 0 20px 20px black;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.countdown>div{
+	text-align: center;
+	border-radius: 20px;
+    padding: 20px;
+
+}
+
+p{
+    color: white;
+    font-family: Vujahday Script;
+	font-size: 30px;
+}
+
+h1,h2,p{
+	margin: 0;
+    font-family: Vujahday Script;
+	color: rgba(255, 255, 255, 0.90);
+	font-style: normal;
+	font-weight: 400;
+
+	margin: 0;
+	cursor: default;
+}
+
+
+h1{
+	font-size: 95px;
+	line-height: 50px;
+}
+
+.watch{
+	font-family: Roboto;
+	margin: 10px 0 30px;
+	font-size: 60px;
+}
+
+
+.tagline{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 100px;
+}
+
+.tagline>p{
+	font-size: 15px;
+}
+
+.name_section{
+	display: flex;
+	justify-content: center;
+	min-width: 260px;
+	min-height: 100px;
+	margin-bottom: 28px;
+	box-sizing: border-box;
+
+}
+
+@media (min-width: 720px) {
+	.name_first_screen{
+		min-width: 550px;
+		min-height: 140px;
+	}
+}
+@media (max-width: 720px) {
+	h1{
+		font-size: 36px;
+	}
+	.watch{
+		font-size: 36px;
+	}
+}
+
+
+.name_first_screen{
+	position: relative;
+}
+
+
+.name_first_screen>h1:first-child{
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 103;
+}
+
+.name_first_screen>h1:nth-child(2n){
+
+	position: absolute;
+	top:22%;
+	left: 12%;
+	z-index: 102;
+}
+
+.name_first_screen>h1:last-child{
+	position: absolute;
+	bottom: 0;
+	left: 29%;
+	z-index: 101;
+}
+
+@media (min-width: 720px) {
+	.name_first_screen>h1:nth-child(2n){
+		top: 32%;
+		left: 10.5%;
+	}
+	
+	.name_first_screen>h1:last-child{
+		left: 32.5%;
+	}
+}
+
+.text_gold{
+	color: #FFC700BA !important;
+
+}
+
+
+
+.test2>p{
+	font-size: 20px;
+	transition: all 1000ms;
 }
