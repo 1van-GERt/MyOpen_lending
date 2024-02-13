@@ -12,6 +12,10 @@ body{
 
 }
 
+.body_fix{
+	overflow: hidden;
+}
+
 .show_mobile_menu{
 	position: fixed;
 	overflow: hidden;
@@ -1041,7 +1045,7 @@ a{
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 130vh;
+	height: 100vh;
 	z-index: 2000;
 	background: url(./assets/img/bg_main.webp) no-repeat black; 
 	background-size: cover;
